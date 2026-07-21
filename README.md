@@ -57,7 +57,7 @@ function Get-UrgencyColor {
     else                             { return "Green" }
 }
 ```
-**Step 5 — Create empty results list and capture today's date**
+**Step 6 — Create empty results list and capture today's date**
 ```powershell
 $results = [System.Collections.Generic.List[PSCustomObject]]::new()
 $today   = Get-Date
