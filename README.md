@@ -5,6 +5,7 @@ Built a multi-module PowerShell security auditing toolkit that connects to Micro
 What it does:
 - Connects to Microsoft Entra ID via Microsoft Graph API, scans all App Registrations across the tenant, identifies client secrets and certificates expiring within 90 days or already expired, and exports a prioritized report.
 **Steps completed today:**
+
 **Step 1 — Environment Setup**
 - Verified Microsoft.Graph PowerShell module version 2.37.0
 - Confirmed PowerShell 7.5.4
