@@ -120,3 +120,5 @@ foreach ($app in $apps) {
 ```powershell
 Write-Host "`nScan complete — $($results.Count) credential(s) flagged" -ForegroundColor Green
 ```
+**Results of this part of the script**
+<img width="932" height="193" alt="Screenshot 2026-07-20 at 22 42 29" src="https://github.com/user-attachments/assets/468e8ecb-1278-450e-8e02-6ec40d623708" />
