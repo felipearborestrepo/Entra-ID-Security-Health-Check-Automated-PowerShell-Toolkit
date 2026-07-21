@@ -19,7 +19,24 @@ What it does:
 ```powershell
 Connect-MgGraph -Scopes "Application.Read.All" -NoWelcome
 Write-Host "Connected to Graph" -ForegroundColor Green
+```
+**Step 3 — Data Collection**
+- Used Get-MgApplication -All to pull all 28 App Registrations from the tenant
+- Retrieved PasswordCredentials (secrets) and KeyCredentials (certificates) properties
 
+```powershell
 $apps = Get-MgApplication -All -Property "Id,DisplayName,AppId,PasswordCredentials,KeyCredentials"
 Write-Host "Total apps found: $($apps.Count)" -ForegroundColor Green
 ```
+
+**Step 5 — Urgency Classification**
+- Built Get-UrgencyLevel function classifying credentials into:
+EXPIRED (already past due)
+CRITICAL (0-30 days)
+WARNING (31-60 days)
+NOTICE (61-90 days)
+OK (over 90 days)
+
+**Step 6 — Color Coded Output**
+- Built Get-UrgencyColor function returning console colors per urgency level
+- Added null safety checks for credentials with missing data
