@@ -158,5 +158,6 @@ Write-Host "=========================================`n" -ForegroundColor Green
 ```
 **Results shown in PowerShell**
 <img width="915" height="154" alt="Screenshot 2026-07-21 at 20 00 38" src="https://github.com/user-attachments/assets/557fccc9-76b2-4dd9-b044-799aefa94e7a" />
+
 **Results shown AppSecretExpiry CSV file**
 <img width="920" height="154" alt="Screenshot 2026-07-21 at 20 01 35" src="https://github.com/user-attachments/assets/29cbdb01-a307-4ccc-a071-b4b9949bdc7a" />
